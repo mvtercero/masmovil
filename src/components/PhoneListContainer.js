@@ -1,6 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
 import * as actionCreators from "../actions/index-actions.js";
+import AlertModal from "./Modals/AlertModal.js";
+import ModalRoot from "./Modals/ModalRoot.js";
+
+// import * as actionCreators from "../actions/modal-actions.js";
 import PhoneDetailComponent from "./PhoneDetailComponent.js";
 
 const mapStateToProps = state => {
@@ -8,6 +12,13 @@ const mapStateToProps = state => {
     phones: state.phones
   }
 }
+
+const mapDispatchToProps = dispatch => ({
+  hideModal: () => dispatch(hideModal()),
+  showModal: (modalProps, modalType) => {
+    dispatch(showModal({ modalProps, modalType }))
+  }
+})
 
 class PhoneListContainer extends React.Component {
   componentWillMount() {
