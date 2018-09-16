@@ -1,7 +1,6 @@
 import axios from "axios";
 import { GET_DATA_PHONES } from "../constants/action-types.js";
-import { ActionTypes } from '../constants/action-types.js';
-// import { OPEN_PHONE_MODAL } from "../constants/action-types.js"
+import { SHOW_PHONE_CARD } from "../constants/action-types.js";
 
 export function loadAPI() {
   return (dispatch) => {
@@ -17,22 +16,10 @@ export const getDataPhones = data => ({
   payload: data
 })
 
-export const showModal = ({ modalProps, modalType }) => dispatch => {
-  dispatch({
-    type: ActionTypes.SHOW_MODAL,
-    modalProps,
-    modalType
-  });
+
+export const showPhoneCard = event => {
+  return (dispatch, getState) => {
+    const selectedItem = event.currentTarget.remove("hidden");
+    dispatch({ type: SHOW_PHONE_CARD, payload: selectedItem });
+  };
 }
-
-export const hideModal = () => dispatch => {
-  dispatch({
-    type: ActionTypes.HIDE_MODAL
-  });
-}
-
-// export const openPhoneModal = data => ({
-//   type: OPEN_PHONE_MODAL,
-//   phoneId: data
-
-// })
