@@ -5,7 +5,7 @@ class PhoneDetailComponent extends React.Component {
   render() {
     return (
       <div onClick={this.props.onClick}>
-        <div className="phone-card" key={this.props.id}>
+        <div className="phone-card hidden" key={this.props.id}>
           <h2>FICHA TÉCNICA</h2>
           <p>{this.props.phone.title}</p>
           <div>

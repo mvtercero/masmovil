@@ -1,7 +1,8 @@
 import { SHOW_PHONE_CARD } from "../constants/action-types.js";
+import { HIDE_PHONE_CARD } from "../constants/action-types.js";
 
 const defaultState = {
-  hidden: true
+  hidden: false
 };
 
 export function showPhoneCard(state = defaultState, action) {
@@ -12,3 +13,4 @@ export function showPhoneCard(state = defaultState, action) {
       return state;
   }
 }
+
