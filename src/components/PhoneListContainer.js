@@ -1,6 +1,6 @@
 import React from "react";
 // import { connect } from "react-redux";
-// import * as actionCreators from "../actions/index.js";
+// import * as actionCreators from "../actions/index-actions.js";
 
 // const mapStateToProps = state => {
 //   return {
