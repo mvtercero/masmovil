@@ -1,6 +1,5 @@
 var createError = require('http-errors');
 var express = require('express');
-var cors = require('cors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -9,7 +8,6 @@ var indexRouter = require('./routes/index');
 var phonesRouter = require('./routes/phones');
 
 var app = express();
-app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -39,3 +37,5 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+module.exports = app;
