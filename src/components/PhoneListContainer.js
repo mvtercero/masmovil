@@ -27,4 +27,4 @@ class PhoneListContainer extends React.Component {
   }
 }
 
-export default PhoneListContainer;
+export default connect(mapStateToProps, actionCreators)(PhoneListContainer);
