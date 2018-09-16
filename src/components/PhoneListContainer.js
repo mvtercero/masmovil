@@ -11,7 +11,7 @@ const mapStateToProps = state => {
 class PhoneListContainer extends React.Component {
   componentWillMount() {
     console.log(this)
-    this.props.loadApi()
+    this.props.loadAPI()
   }
 
   render() {
