@@ -6,7 +6,6 @@ import { SHOW_PHONE_CARD } from "../constants/action-types.js";
 export function loadAPI() {
   return (dispatch) => {
     return axios.get("http://localhost:3001/phones").then((response) => {
-      console.log(response.data.phones)
       dispatch(getDataPhones(response.data.phones))
     })
   }
@@ -20,8 +19,9 @@ export const getDataPhones = data => ({
 
 export const showPhoneCard = event => {
   return (dispatch, getState) => {
-    const phoneCard = document.querySelector(".phone-card")
-    const phoneSelected = phoneCard.classList.toggle("hidden");
+    const phoneSelected = event.currentTarget.querySelector(".phone-card").classList.toggle("hidden");
     dispatch({ type: SHOW_PHONE_CARD, payload: phoneSelected });
   };
 }
+
+

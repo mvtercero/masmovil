@@ -25,7 +25,7 @@ class PhoneListContainer extends React.Component {
 
   render() {
     return (
-      <ul data={this.props.phones}>{
+      <ul>{
         this.props.phones
           .map(phone =>
             <li key={phone.id} >
@@ -34,8 +34,10 @@ class PhoneListContainer extends React.Component {
               <p>{`precio: ` + phone.price}</p>
               <p>{phone.color}</p>
               <img src={phone.url_image} alt={phone.title} />
-              <button onClick={this.handleClick}>Me interesa</button>
-              <PhoneDetailComponent phone={phone} key={phone.id}></PhoneDetailComponent>
+              <div onClick={this.handleClick}>
+                <button>Me interesa</button>
+                <PhoneDetailComponent phone={phone} key={phone.id}></PhoneDetailComponent>
+              </div>
             </li>
           )}
       </ul>
