@@ -27,3 +27,5 @@ class PhoneListContainer extends React.Component {
     )
   }
 }
+
+export default PhoneListContainer;
