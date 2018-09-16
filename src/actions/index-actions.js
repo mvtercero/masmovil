@@ -19,7 +19,8 @@ export const getDataPhones = data => ({
 
 export const showPhoneCard = event => {
   return (dispatch, getState) => {
-    const selectedItem = event.currentTarget.remove("hidden");
-    dispatch({ type: SHOW_PHONE_CARD, payload: selectedItem });
+    const phoneCard = document.querySelector(".phone-card")
+    const phoneSelected = phoneCard.remove("hidden");
+    dispatch({ type: SHOW_PHONE_CARD, payload: phoneSelected });
   };
 }
