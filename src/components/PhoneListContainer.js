@@ -26,6 +26,7 @@ class PhoneListContainer extends React.Component {
             <li key={phone.id}>
               <h2>{phone.title}</h2>
               <h3>{phone.description}</h3>
+              <p>{`precio: ` + phone.price}</p>
               <p>{phone.color}</p>
               <img src={phone.url_image} alt={phone.title} />
               <button onClick={() => (this.handleClick)} >Me interesa</button>
