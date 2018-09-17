@@ -11,14 +11,14 @@ Phone Catalog App created with React, Redux, Express and Axios
   npm install
   npm install --save redux
 
-3. ## RUNNING THE SERVER:
+## 3.SERVER:
 
 * Move to cd react-backend to run server
 
 * Run the server by this command:
   PORT=3001 node bin/www
 
-4. ## RUNNING THE APP:
+## 4.APP:
 
 * Open other terminal
 
