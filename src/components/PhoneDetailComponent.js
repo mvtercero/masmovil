@@ -6,10 +6,15 @@ class PhoneDetailComponent extends React.Component {
     return (
 
       <div className="phone-card__container hidden" key={this.props.id}>
-        <div className="prueba">
-          <h2>GRATIS</h2>
-          <p>{`precio: ` + this.props.phone.price}</p>
-          <p>{this.props.phone.color}</p>
+        <div className="phone__container--detail">
+          <h2 className="phone_item--detail--title">{this.props.phone.title}</h2>
+          <div className="phone_item--detail--card">
+            <h3 className="phone_item--detail--price">{`Desde ` + this.props.phone.price}</h3>
+            <p>{`Pantalla:${this.props.phone.screen}`}</p>
+            <p>{`Cámara:${this.props.phone.camera}`}</p>
+            <p>{`Capacidad:${this.props.phone.storage}`}</p>
+            <p>{`Sim:${this.props.phone.sim}`}</p>
+          </div>
         </div>
       </div>
     )

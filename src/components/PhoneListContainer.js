@@ -41,10 +41,11 @@ class PhoneListContainer extends React.Component {
 
 
                 <div onClick={this.handleClick}>
-                  <button>Me interesa</button>
+                  <button className="phone__container--button">Más detalles</button>
                   <PhoneDetailComponent
                     phone={phone}
-                    key={phone.id}>
+                    key={phone.id}
+                  >
                   </PhoneDetailComponent>
                 </div>
               </li>
