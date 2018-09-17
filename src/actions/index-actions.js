@@ -1,6 +1,7 @@
 import axios from "axios";
 import { GET_DATA_PHONES } from "../constants/action-types.js";
 import { SHOW_PHONE_CARD } from "../constants/action-types.js";
+import { HIDE_PHONE_DETAILS } from "../constants/action-types.js";
 
 
 export function loadAPI() {
@@ -16,10 +17,17 @@ export const getDataPhones = data => ({
   payload: data
 })
 
+export const hidePhoneDetails = data => {
+  return {
+    type: HIDE_PHONE_DETAILS,
+    id: data
+  };
+}
+
 
 export const showPhoneCard = event => {
   return (dispatch, getState) => {
-    const phoneSelected = event.currentTarget.querySelector(".phone-card").classList.toggle("hidden");
+    const phoneSelected = event.currentTarget.querySelector(".phone-card__container").classList.toggle("hidden");
     dispatch({ type: SHOW_PHONE_CARD, payload: phoneSelected });
   };
 }
