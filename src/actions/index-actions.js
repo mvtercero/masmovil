@@ -1,7 +1,7 @@
 import axios from "axios";
 import { GET_DATA_PHONES } from "../constants/action-types.js";
 import { SHOW_PHONE_CARD } from "../constants/action-types.js";
-import { HIDE_PHONE_DETAILS } from "../constants/action-types.js";
+
 
 
 export function loadAPI() {
@@ -16,14 +16,6 @@ export const getDataPhones = data => ({
   type: GET_DATA_PHONES,
   payload: data
 })
-
-export const hidePhoneDetails = data => {
-  return {
-    type: HIDE_PHONE_DETAILS,
-    id: data
-  };
-}
-
 
 export const showPhoneCard = event => {
   return (dispatch, getState) => {

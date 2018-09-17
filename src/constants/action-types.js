@@ -1,6 +1,5 @@
 export const GET_DATA_PHONES = "GET_DATA_PHONES";
 export const SHOW_PHONE_CARD = "SHOW_PHONE_CARD";
-export const HIDE_PHONE_DETAILS = "HIDE_PHONE_DETAILS";
 
 
 
