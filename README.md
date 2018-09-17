@@ -27,5 +27,5 @@ Phone Catalog App created with React, Redux, Express and Axios
 * Run the app by this command:
   npm start
 
-# App runs on ![http://localhost:3000](http://localhost:3000) and server on ![http://localhost:3001](http://localhost:3001)
+# App runs on [http://localhost:3000](http://localhost:3000) and server on [http://localhost:3001](http://localhost:3001)
 
