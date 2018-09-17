@@ -9,6 +9,7 @@ class PhoneDetailComponent extends React.Component {
         <div className="prueba">
           <h2>GRATIS</h2>
           <p>{`precio: ` + this.props.phone.price}</p>
+          <p>{this.props.phone.color}</p>
         </div>
       </div>
     )

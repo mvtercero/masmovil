@@ -19,7 +19,7 @@ body {
   display: grid;
   grid-template-columns: 1fr ;
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 40px;
+  grid-gap: 20px;
 }
 
 .phone__container-list-item {
@@ -34,7 +34,9 @@ body {
 
 .phone_item--description {
   margin: 0;
-  width: 100%;
+  width: 80%;
+  font-size: 14px;
+  text-align: center;
   /* font-size: var(--font-size-extrasmall);
   font-weight: 800;
   text-transform: uppercase; */
@@ -42,24 +44,27 @@ body {
 .phone_item--title {
   margin: 0;
   margin-bottom: 10px;
-  padding-left: 20px;
-  width: 100%;
+  width: 80%;
+  text-align: center;
+  font-weight: 600;
+  /* padding-left: 20px; */
+  /* width: 100%; */
 }
 
-.phone_item_container {
+/* .phone_item_container {
   display: flex;
-  }
+  } */
 
 .phone_item--img {
-  /* width: 50%; */
+  width: 50%;
 }
 
 
-.phone_item_container--text {
+/* .phone_item_container--text {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  }
+  } */
 
 
 
@@ -76,9 +81,9 @@ body {
     margin: 25px 0;
   }
 
-  .phone_item_container {
+  /* .phone_item_container {
     display: flex;
-    }
+    } */
 }
 
 @media all and (min-width:1024px) {
