@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header.js"
 import PhoneListContainer from "./components/PhoneListContainer.js";
-// import "./App.css";
+import "./css/App.css";
 
 class App extends React.Component {
   render() {

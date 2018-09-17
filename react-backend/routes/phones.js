@@ -11,7 +11,7 @@ router.get('/', function (req, res, next) {
           title: "Apple iPhone XS",
           price: 44.50 + "$",
           color: "plata, gris espacial, oro",
-          description: "Con gran pantalla de retina",
+          description: "Gran pantalla de retina",
           url_image: "https://www.vodafone.es/img/dynamique/LISTADO_FINANCING/77b607e5693c47cc87c9b535a86d3095_158x270_iphoneXs-gold.png",
           screen: 5.2 + "''",
           camera: 13 + "MP",

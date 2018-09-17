@@ -1,5 +1,5 @@
 import React from "react";
-// import "./PhoneDetailComponent.css";
+import "../css/Header.css";
 
 class Header extends React.Component {
   render() {

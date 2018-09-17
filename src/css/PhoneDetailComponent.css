@@ -1,0 +1,62 @@
+/* PHONE DETAIL COMPONENT */
+.phone__container--detail {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.phone_item--detail--img {
+  width: 50%;
+}
+
+.phone_item--detail--title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  width: 80%;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 2px solid yellow;
+}
+
+.phone_item--detail--card {
+  width: 80%;
+  border: 2px dotted grey;
+  padding: 20px;
+}
+
+.phone_item--detail--price {
+  margin: 0;
+  width: 100%;
+  font-weight: 900;
+  font-size: 21px;
+  text-align: center;
+}
+
+@media all and (min-width:768px) {
+  .phone_item--detail--title  {
+    width:100%
+  }
+
+}
+
+@media all and (min-width:1024px) {
+  .phone_item--detail--title  {
+    font-size: 21px;
+  }
+
+}
+
+.hidden {
+  display:none;
+}
+

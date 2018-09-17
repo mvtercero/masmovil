@@ -1,0 +1,79 @@
+/* PHONE-LIST-CONTAINER */
+
+.phone__container--list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.phone__container-list-item {
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  padding: 10px;
+} 
+
+.phone_item--description {
+  margin: 0;
+  padding-bottom: 10px;
+  width: 80%;
+  text-align: center;
+}
+.phone_item--title {
+  /* margin: 0; */
+  margin-bottom: 10px;
+  width: 80%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.phone_item--img {
+  width: 50%;
+}
+
+.phone__container--button {
+  border: 0;
+  color: black;
+  line-height: normal;
+  overflow: visible;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 2px;
+  margin: 15px 0 15px 0;
+}
+
+@media all and (min-width:768px) {
+  .phone__container--list  {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 60px;
+    margin: 25px 0;
+  }
+
+  .phone_item--title {
+    width: 100%;
+  }
+
+  .phone_item--description {
+    width: 100%;
+  }
+
+}
+
+@media all and (min-width:1024px) {
+  .phone__container--list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .phone_item--title {
+    font-size: 21px;
+  }
+}

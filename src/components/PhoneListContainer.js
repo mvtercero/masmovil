@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import * as actionCreators from "../actions/index-actions.js";
 import PhoneDetailComponent from "./PhoneDetailComponent.js";
 import Spinner from "./Spinner.js";
-// import "./PhoneListContainer.css";
+import "../css/PhoneListContainer.css";
 
 const mapStateToProps = state => {
   return {
