@@ -8,8 +8,8 @@ Phone Catalog App created with React, Redux, Express and Axios
   git clone https://github.com/mvtercero/masmovil.git
 
 2. Install dependencies for server
-  npm install
-  npm install --save redux
+  - npm install
+  - npm install --save redux
 
 ## 3.SERVER:
 
@@ -25,7 +25,7 @@ Phone Catalog App created with React, Redux, Express and Axios
 * Move to the project directory
 
 * Run the app by this command:
-  npm start
+  - npm start
 
 ## App runs on http://localhost:3000 and server on http://localhost:3001
 
