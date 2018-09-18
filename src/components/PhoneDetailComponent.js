@@ -5,7 +5,7 @@ class PhoneDetailComponent extends React.Component {
   render() {
     return (
 
-      <div className="phone-card__container hidden" key={this.props.id}>
+      <div className="phone-card__container hidden">
         <div className="phone__container--detail">
           <h2 className="phone_item--detail--title">{this.props.phone.title}</h2>
           <div className="phone_item--detail--card">
