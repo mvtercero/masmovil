@@ -27,7 +27,7 @@ class PhoneListContainer extends React.Component {
 
   render() {
     return (
-      <div className>
+      <div>
         {this.props.spinner ? <Spinner /> : null}
 
         <ul className="phone__container--list">
