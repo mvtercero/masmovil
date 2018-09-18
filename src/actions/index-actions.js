@@ -6,9 +6,10 @@ import { SHOW_PHONE_CARD } from "../constants/action-types.js";
 
 export function loadAPI() {
   return (dispatch) => {
-    return axios.get("http://localhost:3001/phones").then((response) => {
-      dispatch(getDataPhones(response.data.phones))
-    })
+    return axios.get("http://localhost:3001/phones")
+      .then((response) => {
+        dispatch(getDataPhones(response.data.phones))
+      })
   }
 }
 
@@ -23,5 +24,6 @@ export const showPhoneCard = event => {
     dispatch({ type: SHOW_PHONE_CARD, payload: phoneSelected });
   };
 }
+
 
 

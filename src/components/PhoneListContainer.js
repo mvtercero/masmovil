@@ -37,7 +37,6 @@ class PhoneListContainer extends React.Component {
                 <h2 className="phone_item--title">{phone.title}</h2>
                 <p className="phone_item--description">{phone.description}</p>
                 <img className="phone_item--img" src={phone.url_image} alt={phone.title} />
-                {/* <div className="phone_item_container--text"></div> */}
 
 
                 <div onClick={this.handleClick}>
